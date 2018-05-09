@@ -3,5 +3,6 @@ class SchoolController < ApplicationController
   end
 
   def professor
+    @professor = Professor.where(name: params[:professor_name])
   end
 end

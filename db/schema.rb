@@ -24,11 +24,12 @@ ActiveRecord::Schema.define(version: 20180506143950) do
   end
 
   create_table "professors", force: :cascade do |t|
-    t.string "p_name"
-    t.string "p_email"
-    t.string "p_department"
-    t.string "p_mobile"
-    t.string "p_office_adress"
+    t.string "name"
+    t.string "school"
+    t.string "email"
+    t.string "department"
+    t.string "mobile"
+    t.string "office_adress"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
